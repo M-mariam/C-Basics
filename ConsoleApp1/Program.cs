@@ -7,63 +7,37 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            // datatype (value type) : stack
+            // 1
+            Console.WriteLine("enter any number");
+            int number = int.Parse(Console.ReadLine());
+            Console.WriteLine("The number is " + number);
+            ////2
+            //string age = "twenty";
+            //int intvar = int.Parse(age);
+            //Console.WriteLine(intvar);
+            // - > no error but (int.Parse) in the run time cause an error as the value is not a number
 
-            //Point P01; //REFERENCE 
-            // DCLARe reference from type 'point'
-            //P01 : CAN REFER YO OBJECT FROM TYPE POINT
+            //3
+            float num1 = 5.5f;
+            float num2 = 6.6f;
+            float result = num1 + num2;
+            Console.WriteLine(result);
 
-            // Console.WriteLine(P01);
-            //P01 = new Point();
-            // 1. allocate te number of req bytes for the object at heap
-            // 2. intialized the allocated byte with the defualt value of the DT
-            // 3. call user-defined constructor if exist 
-            // 4. assign th object to the reference 'PO1'
-            //Console.WriteLine(P01.y);
+            //4
+            Console.WriteLine("enter any Word");
+            string StringVar = Console.ReadLine();
+            Console.WriteLine("enter any number");
+            int numvar = int.Parse(Console.ReadLine());
+            Console.WriteLine(StringVar.Substring(numvar));
 
-            // object
-            //object O01;
-            // Declare for reference from tye obj
-            // O01 : can refere to instance from type obj or any type inherred
-
-            //O01 = new object();
-            //O01 = 1;
-            //O01 = 'A';
-            //O01 = new Point();
-            //Console.Write(O01.ToString()); //{0,0}
-            //Console.Write(O01.GetHashCode()); // id: indicate for the address of the obj
-
-            //// 1
-            //Console.WriteLine("enter any number");
-            //int num = int.Parse(Console.ReadLine());
-            //Console.WriteLine("The number is " + num);
-            //////2
-            ////string age = "twenty";
-            ////int intvar = int.Parse(age);
-            ////Console.WriteLine(intvar);
-            //// - > no error but (int.Parse) in the run time cause an error as the value is not a number
-
-            ////3
-            //float num1 = 5.5f;
-            //float num2 = 6.6f;
-            //float result = num1 + num2;
-            //Console.WriteLine(result);
-
-            ////4
-            //Console.WriteLine("enter any Word");
-            //string StringVar = Console.ReadLine();
-            //Console.WriteLine("enter any number");
-            //int numvar = int.Parse(Console.ReadLine());
-            //Console.WriteLine(StringVar.Substring(numvar));
-
-            ////5
-            int num1 = 10;
-            int num2 = num1;
-            Console.WriteLine("originalValue: " + num1);
-            Console.WriteLine("anotherValue: " + num2);
-            num2 = 50;
+            ////5 
+            int num01 = 10;
+            int num02 = num01;
+            Console.WriteLine("originalValue: " + num01);
+            Console.WriteLine("anotherValue: " + num02);
+            num02 = 50;
             Console.WriteLine("After modifying anotherValue:");
-            Console.WriteLine("originalValue: " + num2);
+            Console.WriteLine("originalValue: " + num02);
 
             //6
             Point P01;
