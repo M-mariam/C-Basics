@@ -51,7 +51,7 @@ namespace ConsoleApp1
             Console.WriteLine("originalValue: " + num02);
             #endregion
 
-            //6
+            
             #region Q6
             Point P01;
             P01 = new Point();
@@ -64,7 +64,6 @@ namespace ConsoleApp1
             #endregion
 
 
-            //7
             #region Q7
             Console.WriteLine("enter your Fname");
             string Fname = Console.ReadLine();
@@ -74,7 +73,6 @@ namespace ConsoleApp1
             #endregion
 
 
-            //8
 
             #region Q8 
             Console.WriteLine("enter Princible number");
@@ -90,7 +88,6 @@ namespace ConsoleApp1
 
             #endregion
 
-            //9
             #region Q9
 
             Console.WriteLine("enter your weight in KiloGrams");
@@ -148,7 +145,7 @@ namespace ConsoleApp1
             if (!(number <= 0))
                 Console.WriteLine(++number + z++ + " " + ++z);
             else
-                Console.WriteLine(--number + z-- + " " + --z);
+                Console.WriteLine(--num + z-- + " " + --z);
             //answer d
             #endregion
 
